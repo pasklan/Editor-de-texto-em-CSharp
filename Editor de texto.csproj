@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0404845F-A4F1-4925-8B86-D21825C956DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Editor_de_texto</RootNamespace>
+    <AssemblyName>Editor de texto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\broken-link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\center-align.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\columns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\file-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\indent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\justify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\left-align.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\list-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\outdent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\paperclip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\paragraph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\right-align.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\save-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\strikethrough.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\subscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\superscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\table-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\text-height.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\text-width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icones\png\undo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
